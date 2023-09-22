@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--~ ################# Icon #################-->
+    <link rel="shortcut icon" href="sewar/logo.png" type="image/x-icon">
+
+    <!--~ ################# Title #################-->
+    <title> </title>
+
+    <!--~ ################# Fonts #################-->
+
+    <!--~ ################# CSS #################-->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/mediaQuery.css">
+    <link rel="stylesheet" href="css/Style.css">
+</head>
+
+<body>
+    <!--! ++++++++++++++++++++=========== NAV BAR ============++++++++++++++++++++++++  -->
+    <nav class="min-vh-100 position-fixed">
+
+        <div class="d-flex">
+            <div class=" hiddenNav min-vh-100 d-flex flex-column justify-content-between container ">
+                <ul class="list-unstyled mt-1 overflow-hidden">
+                    <li data-list="movie/now_playing" onclick="getMovies('movie/now_playing')" class="text-capitalize my-3 ms-1 p-1 pointer position-relative " data-menu-link="nowPlaying">
+                        Now Playing</li>
+                    <li data-list="movie/popular" onclick="getMovies('movie/popular')" class="text-capitalize my-3 ms-1 p-1 pointer position-relative " data-menu-link="popular">
+                        Popular</li>
+                    <li data-list="movie/top_rated" onclick="getMovies('movie/top_rated')" class="text-capitalize my-3 ms-1 p-1 pointer position-relative " data-menu-link="topRated">
+                        Top Rated</li>
+                    <li data-list="trending/movie/day" onclick="getMovies('trending/movie/day')" class="text-capitalize my-3 ms-1 p-1 pointer position-relative " data-menu-link="trending">
+                        Trending</li>
+                    <li data-list="movie/upcoming" onclick="getMovies('movie/upcoming')" class="text-capitalize my-3 ms-1 p-1 pointer position-relative " data-menu-link="upcomming">
+                        Upcomming</li>
+                    <li  class="text-capitalize my-3 ms-1 p-1 pointer position-relative " data-menu-link="contactUs">
+                      <a class="text-decoration-none" href="#contact">contact Us</a>  </li>
+                </ul>
+
+                <footer class="px-2  mb-4">
+                    <i class="pointer m-1 p-1 fa-brands fa-facebook-f"></i>
+                    <i class="pointer m-1 p-1 fa-brands fa-twitter"></i>
+                    <i class="pointer m-1 p-1 fa-solid  fa-globe"></i>
+                    <p class="text-white-50 mt-1 select-none">Copyright &copy; 2023 All Rights
+                        Reserved.
+                        <span>created by </span><a class="red-color pointer text-decoration-none" title="github link"
+                            href="https://github.com/Rndody" target="_blank">Rndody</a>
+                    </p>
+
+                </footer>
+            </div>
+            <div class=" visibleNav min-vh-100 d-flex flex-column justify-content-between align-items-center ">
+                <div class="logo mt-4">
+                    <img class=" w-100 " src="sewar/logo.png" alt="logo">
+                </div>
+
+
+                <i class="pointer  toggel-icon fa-solid fa-align-justify" title="menu"></i>
+                <!-- <i class="pointer fa-solid fa-xmark fa-2x "></i>   -->
+
+                <div class="icons2 d-flex flex-column justify-content-center align-items-center mb-5">
+                    <i class="pointer fa-solid fa-globe p-1 "></i>
+                    <i class="pointer fa-solid fa-share-nodes p-1 "></i>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </nav>
+
+
+    <!--! ++++++++++++++++++++=========== DISPLAY MOVIES ============++++++++++++++++++++++++  -->
+
+
+    <section id="display" class="container py-5">
+        <input id="search" onkeyup="search(this.value)" type="search" placeholder="Search"
+            class="form-control w-50 mx-auto bg-transparent rounded-pill text-white shadow-none border-white px-3">
+        <div class="row displayMovies g-4 mt-3 mx-sm-3 text-white">
+
+
+
+            <!-- <div class="col-lg-4 col-md-6 ">
+                <div class="movieCard position-relative">
+
+                    <img src="sewar/default-movie.jpg" class="img-fluid">
+
+                    <div class="layer p-3 m-1 position-absolute">
+                        <h1 class=" animate__animated text-center " data-layer="title">title</h1>
+                        <p class=" animate__animated  " data-layer="discription">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit.
+                            Quibusdam quia beatae facere nam iste. Delectus sequi quidem sunt illum atque molestiae
+                            laborum.
+                            Error asperiores ducimus facilis eveniet necessitatibus iusto veniam!</p>
+                        <p class=" animate__animated  " data-layer="date"><span class="">Release Date</span>span>kalam kalam : </p>
+                        <h3 class=" animate__animated  " data-layer="stars">
+                            <i class=" animate__animated  fa-regular fa-star-half-stroke text-warning fs-6"></i>
+                        </h3>
+                        <h3 class="animate__animated  rounded-circle d-flex justify-content-center align-items-center "
+                            data-layer="vote">5.5</h3>
+                    </div>
+                </div>  
+            </div>
+ -->
+
+
+
+        </div>
+    </section>
+    <!--! ++++++++++++++++++++=========== CONTACT US ============++++++++++++++++++++++++  -->
+
+    <section id="contact" class="container text-white py-5">
+        <h2>Contact US</h2>
+        <div class="contact min-vh-100 d-flex justify-content-center align-items-center">
+            <div class="container w-75 text-center">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <input id="nameInput" onkeyup="inputsValidation()" type="text" class="form-control" placeholder="Enter Your Name">
+                        <div id="nameAlert" class="alert alert-danger w-100 mt-2 d-none">
+                            Special characters and numbers not allowed
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input id="emailInput" onkeyup="inputsValidation()" type="email" class="form-control " placeholder="Enter Your Email">
+                        <div id="emailAlert" class="alert alert-danger w-100 mt-2 d-none">
+                            Email not valid *exemple@yyy.zzz
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input id="phoneInput" onkeyup="inputsValidation()" type="text" class="form-control " placeholder="Enter Your Phone">
+                        <div id="phoneAlert" class="alert alert-danger w-100 mt-2 d-none">
+                            Enter valid Phone Number
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input id="ageInput" onkeyup="inputsValidation()" type="number" class="form-control " placeholder="Enter Your Age">
+                        <div id="ageAlert" class="alert alert-danger w-100 mt-2 d-none">
+                            Enter valid age
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input  id="passwordInput" onkeyup="inputsValidation()" type="password" class="form-control " placeholder="Enter Your Password">
+                        <div id="passwordAlert" class="alert alert-danger w-100 mt-2 d-none">
+                            Enter valid password *Minimum eight characters, at least one letter and one number:*
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input  id="repasswordInput" onkeyup="inputsValidation()" type="password" class="form-control " placeholder="Repassword">
+                        <div id="repasswordAlert" class="alert alert-danger w-100 mt-2 d-none">
+                            Enter valid repassword 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12  mt-4">
+                    <button type="submit" id="submitBtn" disabled class="form-btn rounded-2 mb-3">Submit</button>
+                </div>
+            </div>
+        </div>
+       
+    </section>
+    <!--! ++++++++++++++++++++=========== TOP ARROW ============++++++++++++++++++++++++  -->
+
+    <div id="back-to-top"><a href="#"><i class="fa-solid fa-arrow-up-long"></i></a></div>
+    <!--! ++++++++++++++++++++=========== LOADING ============++++++++++++++++++++++++  -->
+
+    <div class="loading position-fixed top-0 start-0 end-0 bottom-0  justify-content-center align-items-center ">
+        <i class="fa fa-spinner fa-spin fa-5x"></i>
+    </div>
+
+
+    <!--~ ################# Java Script Files #################-->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/index.js"></script>
+
+</html>

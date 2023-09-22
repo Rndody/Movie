@@ -1,0 +1,286 @@
+// const options = {
+//     method: 'GET',
+//     headers: {
+//       accept: 'application/json',
+//       Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3NTViNjFhOWEzZTliMjAyMTZkYWIxNzI2MTIyNjIwYSIsInN1YiI6IjY0ZmE1N2Q3NDM0OTRmMDExZGU4ZTRiMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.mFRHCyQdmRfZ_PyDHRgClw54U8uEv4FXKdRDTq5cvuM'
+//     }
+//   };
+  
+//   fetch('https://api.themoviedb.org/3/genre/movie/list?language=en', options)
+//     .then(response => response.json())
+//     .then(response => console.log(response))
+//     .catch(err => console.error(err));
+
+    //* now playing
+    // const options = {
+    //     method: 'GET',
+    //     headers: {
+    //       accept: 'application/json',
+    //       Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3NTViNjFhOWEzZTliMjAyMTZkYWIxNzI2MTIyNjIwYSIsInN1YiI6IjY0ZmE1N2Q3NDM0OTRmMDExZGU4ZTRiMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.mFRHCyQdmRfZ_PyDHRgClw54U8uEv4FXKdRDTq5cvuM'
+    //     }
+    //   };
+      
+    //   fetch('https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1', options)
+    //     .then(response => response.json())
+    //     .then(response => console.log(response))
+    //     .catch(err => console.error(err));
+
+    //* Popular
+    // const options = {
+    //     method: 'GET',
+    //     headers: {
+    //       accept: 'application/json',
+    //       Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3NTViNjFhOWEzZTliMjAyMTZkYWIxNzI2MTIyNjIwYSIsInN1YiI6IjY0ZmE1N2Q3NDM0OTRmMDExZGU4ZTRiMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.mFRHCyQdmRfZ_PyDHRgClw54U8uEv4FXKdRDTq5cvuM'
+    //     }
+    //   };
+      
+    //   fetch('https://api.themoviedb.org/3/movie/popular?language=en-US&page=1', options)
+    //     .then(response => response.json())
+    //     .then(response => console.log(response))
+    //     .catch(err => console.error(err));
+    //* top Rated
+    // const options = {
+    //     method: 'GET',
+    //     headers: {
+    //       accept: 'application/json',
+    //       Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3NTViNjFhOWEzZTliMjAyMTZkYWIxNzI2MTIyNjIwYSIsInN1YiI6IjY0ZmE1N2Q3NDM0OTRmMDExZGU4ZTRiMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.mFRHCyQdmRfZ_PyDHRgClw54U8uEv4FXKdRDTq5cvuM'
+    //     }
+    //   };
+      
+    //   fetch('https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1', options)
+    //     .then(response => response.json())
+    //     .then(response => console.log(response))
+    //     .catch(err => console.error(err));
+    //* Trending
+    // https://api.themoviedb.org/3/trending/all/day?api_key=eba8b9a7199efdcb0ca1f96879b83c44
+    //^movies 
+    // const options = {
+    //     method: 'GET',
+    //     headers: {
+    //       accept: 'application/json',
+    //       Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3NTViNjFhOWEzZTliMjAyMTZkYWIxNzI2MTIyNjIwYSIsInN1YiI6IjY0ZmE1N2Q3NDM0OTRmMDExZGU4ZTRiMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.mFRHCyQdmRfZ_PyDHRgClw54U8uEv4FXKdRDTq5cvuM'
+    //     }
+    //   };
+      
+    //   fetch('https://api.themoviedb.org/3/trending/movie/day?language=en-US', options)
+    //     .then(response => response.json())
+    //     .then(response => console.log(response))
+    //     .catch(err => console.error(err));
+        //^ All
+        
+        // const options = {
+        //     method: 'GET',
+        //     headers: {
+        //       accept: 'application/json',
+        //       Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3NTViNjFhOWEzZTliMjAyMTZkYWIxNzI2MTIyNjIwYSIsInN1YiI6IjY0ZmE1N2Q3NDM0OTRmMDExZGU4ZTRiMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.mFRHCyQdmRfZ_PyDHRgClw54U8uEv4FXKdRDTq5cvuM'
+        //     }
+        //   };
+          
+        //   fetch('https://api.themoviedb.org/3/trending/all/day?language=en-US', options)
+        //     .then(response => response.json())
+        //     .then(response => console.log(response))
+        //     .catch(err => console.error(err));
+        //^ person/people
+        // const options = {
+        //     method: 'GET',
+        //     headers: {
+        //       accept: 'application/json',
+        //       Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3NTViNjFhOWEzZTliMjAyMTZkYWIxNzI2MTIyNjIwYSIsInN1YiI6IjY0ZmE1N2Q3NDM0OTRmMDExZGU4ZTRiMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.mFRHCyQdmRfZ_PyDHRgClw54U8uEv4FXKdRDTq5cvuM'
+        //     }
+        //   };
+          
+        //   fetch('https://api.themoviedb.org/3/trending/person/day?language=en-US', options)
+        //     .then(response => response.json())
+        //     .then(response => console.log(response))
+        //     .catch(err => console.error(err));
+
+//* up comming
+// const options = {
+//     method: 'GET',
+//     headers: {
+//       accept: 'application/json',
+//       Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3NTViNjFhOWEzZTliMjAyMTZkYWIxNzI2MTIyNjIwYSIsInN1YiI6IjY0ZmE1N2Q3NDM0OTRmMDExZGU4ZTRiMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.mFRHCyQdmRfZ_PyDHRgClw54U8uEv4FXKdRDTq5cvuM'
+//     }
+//   };
+  
+//   fetch('https://api.themoviedb.org/3/movie/upcoming?language=en-US&page=1', options)
+//     .then(response => response.json())
+//     .then(response => console.log(response))
+//     .catch(err => console.error(err));
+//* details
+// const options = {
+//     method: 'GET',
+//     headers: {
+//       accept: 'application/json',
+//       Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3NTViNjFhOWEzZTliMjAyMTZkYWIxNzI2MTIyNjIwYSIsInN1YiI6IjY0ZmE1N2Q3NDM0OTRmMDExZGU4ZTRiMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.mFRHCyQdmRfZ_PyDHRgClw54U8uEv4FXKdRDTq5cvuM'
+//     }
+//   };
+  
+//   fetch('https://api.themoviedb.org/3/movie/movie_id?language=en-US', options)
+//     .then(response => response.json())
+//     .then(response => console.log(response))
+//     .catch(err => console.error(err));
+//* Search
+// --url 'https://api.themoviedb.org/3/search/movie?query=Batman&callback=test'
+
+
+//&search with "barb" 
+// const options = {
+//     method: 'GET',
+//     headers: {
+//       accept: 'application/json',
+//       Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3NTViNjFhOWEzZTliMjAyMTZkYWIxNzI2MTIyNjIwYSIsInN1YiI6IjY0ZmE1N2Q3NDM0OTRmMDExZGU4ZTRiMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.mFRHCyQdmRfZ_PyDHRgClw54U8uEv4FXKdRDTq5cvuM'
+//     }
+//   };
+  
+//   fetch('https://api.themoviedb.org/3/search/movie?query=barb&include_adult=false&language=en-US&page=1', options)
+//     .then(response => response.json())
+//     .then(response => console.log(response))
+//     .catch(err => console.error(err));
+//* Example
+// curl --request GET \
+//      --url 'https://api.themoviedb.org/3/movie/11?api_key=755b61a9a3e9b20216dab1726122620a'
+
+
+//  Here's a quick example, let's assume you want the movie details and the videos for a movie.
+//   Usually you would think you have to issue two requests:
+// https://api.themoviedb.org/3/movie/157336?api_key=755b61a9a3e9b20216dab1726122620a&append_to_response=videos
+// Even more powerful, you can issue multiple requests, just comma separate the values:
+// https://api.themoviedb.org/3/movie/157336?api_key=755b61a9a3e9b20216dab1726122620a&append_to_response=videos,images
+
+switch case
+case 10{loop 5 stars  case <10 9>= loop 4 stars and half}
+case 8{loop 4 stars  case <8 97>= loop 3 stars and half}
+
+
+e7na na5od el vote devided 2 w lw el raqm ely yetl3 ne3mlo loob lel stars
+ we lw feh fraction ne3mlo nos negma lewa7do bara el loop
+
+
+
+
+
+
+
+
+ https://api.themoviedb.org/3/discover/movie?api_key=755b61a9a3e9b20216dab1726122620a --> discover movie
+
+
+
+ image path https://image.tmdb.org/t/p/w500/{{{{{{{1E5baAaEse26fej7uHcjOgEE2t2.jpg}}}}}}}
+
+
+
+
+
+ $('#search').on("input", e => {
+    searchMovie(e.target.value);
+    if(e.target.value == "")
+    {
+        getMovie("movie/now_playing");
+    }
+});
+$(document).ready(function(){
+    $('.loading').fadeOut(2000)
+})
+
+
+
+
+
+function calcStars(avgNum) {
+    // let starsCartona = ``;
+    let shewal = ''
+    switch (avgNum) {
+        case (avgNum < 1):
+            starsCartona = ` <i class="fa-regular fa-star"></i>`
+            break;
+        case 1:
+            starsCartona = ` <i class="fa-solid fa-star"></i>`
+            break;
+        case (avgNum < 2):
+            starsCartona = `<i class="fa-solid fa-star"></i> <i class="fa-solid fa-star-half-stroke"></i>`
+            break;
+        case 2:
+            for (let i = 0; i <= 1; i++) {
+                shewal += `<i class="fa-solid fa-star "></i>`;
+                starsCartona = shewal;
+            }
+            break;
+        case (avgNum < 3):
+            for (let i = 0; i <= 1; i++) {
+                shewal += `<i class="fa-solid fa-star "></i>`;
+            }
+            starsCartona = shewal + ` <i class="fa-solid fa-star-half-stroke"></i>`;
+            break;
+        case 3:
+            for (let i = 0; i <= 2; i++) {
+                shewal += `<i class="fa-solid fa-star "></i>`;
+                starsCartona = shewal;
+            }
+            break;
+        case (avgNum < 4):
+            for (let i = 0; i <= 2; i++) {
+                shewal += `<i class="fa-solid fa-star "></i>`;
+            }
+            starsCartona = shewal + ` <i class="fa-solid fa-star-half-stroke"></i>`;
+            break;
+        case 4:
+            for (let i = 0; i <= 3; i++) {
+               shewal+= `<i class="fa-solid fa-star "></i>`;
+               starsCartona=shewal;
+            }
+            break;
+        case (avgNum < 5):
+            for (let i = 0; i <= 3; i++) {
+               shewal += `<i class="fa-solid fa-star "></i>`;
+            }
+            starsCartona =shewal+ ` <i class="fa-solid fa-star-half-stroke"></i>`;
+            break;
+        case 5:
+            for (let i = 0; i < 5; i++) {
+              shewal+= `<i class="fa-solid fa-star "></i>`;
+              starsCartona =shewal;
+            }
+            break;
+    }
+    return starsCartona;
+}
+
+// console.log(calcStars(2.5));
+function display(arr) {
+
+    const imgPrefix = `https://image.tmdb.org/t/p/w500/`;
+    let cartona = "";
+    for (let i = 0; i < arr.length; i++) {
+        let voteAvg = arr[i].vote_average / 2;
+        calcStars(voteAvg)
+        console.log(starsCartona)
+
+        cartona += `
+        <div class="col-lg-4 col-md-6 ">
+                <div class="movieCard position-relative">
+
+                    <img src="${imgPrefix + arr[i].poster_path || 'sewar/default-movie.jpg'} "class="img-fluid">
+
+                    <div class="layer p-3 position-absolute">
+                        <h1 class=" animate__animated text-center" data-layer="title">${arr[i].title}</h1>
+                        <p class=" animate__animated  " data-layer="discription">${arr[i].overview.split(" ").slice(0, 35).join(" ") || ""}</p>
+                        <p class=" animate__animated  " data-layer="date">Release Date: ${arr[i].release_date}  </p>
+                        <h3 class=" animate__animated  " data-layer="stars">${starsCartona} </h3>
+                        <h3 class="animate__animated  rounded-circle d-flex justify-content-center align-items-center "
+                            data-layer="vote">${arr[i].vote_average.toFixed(1)}</h3>
+                            
+                    </div>
+                </div>  
+            </div>
+           
+        `
+        // console.log(calcStars(voteAvg))
+        $(".displayMovies").html(cartona);
+        $(".movieCard").mouseenter(hover);
+        $(".movieCard").mouseleave(exitHover);
+
+
+    }
+}

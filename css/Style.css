@@ -1,0 +1,324 @@
+:root {
+    --main-color: #000;
+    --secondary-color: #fff;
+    --hover-link: #FF655C;
+    /** var(--main-color) <-- how to use it */
+}
+
+.red-color {
+    color: red;
+}
+
+body {
+    background-color: var(--main-color);
+    padding-left: 0%;
+    overflow: hidden;
+}
+
+nav {
+    /* background-color: var(--main-color); */
+    width: 20rem;
+    z-index: 999999;
+}
+
+nav ul {
+    /* height: 0px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s; */
+}
+
+nav ul li,
+a {
+    top: -100px;
+    color: var(--secondary-color);
+    transition: 0.1s;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -ms-transition: 0.1s;
+    -o-transition: 0.1s;
+}
+
+nav ul li:hover {
+    color: var(--hover-link);
+
+}
+
+nav ul a:hover {
+    color: var(--hover-link);
+
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.hiddenNav {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+
+}
+
+.visibleNav {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.toggel-icon {
+    /* font-size: calc(1.5rem*0.9vw); */
+    /* font-size: 3rem; */
+    font-size: calc(1.4rem + 0.75vw);
+}
+
+.select-none {
+    user-select: none;
+}
+
+.logo {
+    width: 50%;
+}
+
+i:hover {
+    font-weight: 900;
+    font-size: larger;
+}
+
+
+.layer {
+    background-color: #00000087;
+    color: var(--secondary-color);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.movieCard:hover .layer {
+    opacity: 1;
+}
+
+.movieCard {
+    overflow: hidden;
+}
+
+[data-layer="title"] {
+
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+[data-layer="discription"] {
+
+    transition: 3s;
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -ms-transition: 3s;
+    -o-transition: 3s;
+}
+
+[data-layer="vote"] {
+    width: 50px;
+    height: 50px;
+    border: 2px solid green;
+    top: 20px;
+    color: var(--secondary-color);
+}
+
+.movieCard:hover img {
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    transform: scale(1.1, 1.1) rotate(5deg);
+    -webkit-transform: scale(1.1, 1.1) rotate(5deg);
+    -moz-transform: scale(1.1, 1.1) rotate(5deg);
+    -ms-transform: scale(1.1, 1.1) rotate(5deg);
+    -o-transform: scale(1.1, 1.1) rotate(5deg);
+}
+
+.movieCard img {
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+[data-layer="stars"] {}
+
+[data-layer="date"] {}
+
+
+.fa-star-half-stroke,
+.fa-star {
+    color: yellow;
+}
+
+
+
+
+
+
+
+
+/* .movieCard:hover [data-layer="discription"] {
+    opacity: 1;
+    backface-visibility: visible !important;
+    animation-name: flipInX
+
+}
+ 
+
+.movieCard:hover [data-layer="date"] {}
+
+.movieCard:hover [data-layer="stars"] {}
+ 
+  .movieCard:hover [data-layer="vote"] {
+    top:0%;
+    } 
+
+.movieCard:hover [data-layer="title"] {
+    top: 0;
+    opacity: 1;
+}  */
+
+
+
+
+#contact .form-control {
+    box-shadow: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-color: #CED4DA;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    color: #fff;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+#contact .form-control::placeholder {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: none;
+}
+
+.form-btn {
+    background-color: var(--main-color);
+    color: #fff !important;
+    padding: 10px 25px;
+    transition: all 0.2s ease-in-out;
+    border: none;
+}
+
+.form-btn:hover {
+    color: #000 !important;
+    background-color: #F8F6F6;
+}
+
+.showPass {
+    background-color: transparent;
+    position: absolute;
+    right: 10px;
+    bottom: -20px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.error {
+    color: rgb(214, 46, 51);
+    position: absolute;
+    font-weight: 700;
+}
+
+#back-to-top {
+    position: fixed;
+    background-color: var(--main-color);
+    height: 40px;
+    width: 40px;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    -webkit-box-shadow: 0px 5px 15px rgb(0 0 0 / 15%);
+    box-shadow: 0px 5px 15px rgb(0 0 0 / 15%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+#back-to-top i {
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#back-to-top a {
+    color: #fff;
+}
+
+#back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.loading {
+    z-index: 9999999999999;
+    display: flex;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
